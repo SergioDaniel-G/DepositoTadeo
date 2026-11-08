@@ -1,0 +1,411 @@
+
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #172337;
+}
+
+/* HEADER */
+.dtc-header {
+    background: #d4d5d5;
+    padding: 15px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+.search-box {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 45%;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 13px 20px;
+    width: 100%;
+}
+
+.search-box button {
+    border: none;
+    background: #e9e9e5;
+    padding: 0 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-contact {
+    background: #ffc220;
+    color: #172337;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MENU */
+.dtc-menu {
+    background: #d4d5d6;
+    padding: 15px 0;
+}
+
+.dtc-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dtc-menu a:hover {
+    color: #ffc220;
+}
+
+/* PORTADA */
+.hero {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+        rgba(238, 198, 94, 0.95),
+        rgba(0, 113, 206, .72)),
+        url('imagenes/michelada-clasica.jpg') center/cover;
+
+    color: white;
+    padding: 70px 0;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    color: #f4ca59;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn-shop {
+    display: inline-block;
+    background: #ffc220;
+    color: #172337;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* TITULOS */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading span {
+    color: #0071ce;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* PRODUCTOS */
+.product-card {
+    height: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e8ed;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h4 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.product-info p {
+    color: #777;
+    min-height: 25px;
+}
+
+.product-info strong {
+    display: block;
+    color: #0071ce;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    display: block;
+    text-align: center;
+    background: #ffc220;
+    color: #172337;
+    padding: 11px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy-btn:hover,
+.btn-shop:hover {
+    background: #f0b000;
+    color: #172337;
+}
+
+/* PROMOCION */
+.promo-banner {
+    background: #0071ce;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.promo-banner h2 {
+    font-weight: 900;
+}
+
+.promo-banner a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ffc220;
+    color: #172337;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* GALERIA */
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* CONTACTO */
+.contact-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.contact-section h2 {
+    color: #0071ce;
+    font-weight: 900;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-btn {
+    background: #ffc220;
+    color: #172337;
+}
+
+/* FOOTER */
+.dtc-footer {
+    background: #8e664a;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.dtc-footer h3 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.dtc-footer h4 {
+    color: #ffc220;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dtc-footer p {
+    color: #e0eaf5;
+    margin-bottom: 12px;
+}
+
+.dtc-footer hr {
+    border-color: rgba(255,255,255,.4);
+    margin-top: 35px;
+}
+
+/* REDES SOCIALES */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    color: #ffc220;
+    transform: translateX(5px);
+}
+
+/* UBICACION */
+.location-btn {
+    display: inline-block;
+    background: #ffc220;
+    color: #003b75;
+    padding: 12px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.location-btn:hover {
+    background: white;
+    color: #003b75;
+}
+
+/* DERECHOS */
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: #25d366;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+/* CELULARES */
+@media(max-width: 768px) {
+
+    .search-box {
+        width: 100%;
+        order: 3;
+    }
+
+    .header-contact {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        min-height: 330px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-info {
+        padding: 12px;
+    }
+
+    .product-info h4 {
+        font-size: 16px;
+    }
+
+    .product-info strong {
+        font-size: 17px;
+    }
+
+    .gallery-img {
+        height: 150px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .dtc-footer {
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}

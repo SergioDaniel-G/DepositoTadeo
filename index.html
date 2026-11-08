@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DTC | Depósito Tadeo Chicuasen</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header class="dtc-header">
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+
+            <a href="#inicio" class="brand">
+                <img src="imagenes/deposito.jpeg" alt="DTC">
+                <span>DEPOSITO TADEO CHICUASEN</span>
+            </a>
+
+            <form class="search-box" action="#" onsubmit="return false;">
+                <input type="search" id="buscador"
+                       placeholder="¿Qué estás buscando?"
+                       aria-label="Buscar productos">
+                <button type="submit">🔍</button>
+            </form>
+
+            <a href="#contacto" class="header-contact">
+                Contactar
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<!-- MENU -->
+<nav class="dtc-menu">
+    <div class="container-fluid px-4">
+        <div class="d-flex flex-wrap gap-4">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Bebidas</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<!-- PORTADA -->
+<section id="inicio" class="hero">
+    <div class="container">
+        <div class="hero-content">
+
+            <span class="hero-label">BIENVENIDO A Deposito Tadeo Chicuasen</span>
+
+            <h1>DEPÓSITO TADEO CHICUASEN</h1>
+
+            <h2>El sabor que nos distingue.</h2>
+
+            <p>Encuentra tus bebidas favoritas en un solo lugar.</p>
+
+            <a href="#productos" class="btn-shop">
+                VER PRODUCTOS
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="container-fluid px-4 py-5">
+
+    <div class="section-heading">
+        <div>
+            <span>CATÁLOGO DTC</span>
+            <h2>Compra tus favoritos</h2>
+        </div>
+    </div>
+
+    <div class="row g-4" id="productList">
+
+        <!-- MICHELADAS -->
+        <div class="col-6 col-md-4 col-lg-3 product-item">
+            <div class="product-card">
+
+                <img src="imagenes/victoria.jpg" alt="DTC">
+
+                <div class="product-info">
+                    <h4>Micheladas</h4>
+                    <p>Elige tu favorita.</p>
+                    <strong>$65 - $70 MXN</strong>
+
+                    <a href="https://wa.me/525540246668"
+                       target="_blank"
+                       rel="noopener"
+                       class="buy-btn">
+                        Consultar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- AZULITOS -->
+        <div class="col-6 col-md-4 col-lg-3 product-item">
+            <div class="product-card">
+
+                <img src="imagenes/victoria.jpg" alt="DTC">
+
+                <div class="product-info">
+                    <h4>Azulitos</h4>
+                    <p>Una bebida llena de color.</p>
+                    <strong>$70 MXN</strong>
+
+                    <a href="https://wa.me/525540246668"
+                       target="_blank"
+                       rel="noopener"
+                       class="buy-btn">
+                        Consultar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CERVEZAS -->
+        <div class="col-6 col-md-4 col-lg-3 product-item">
+            <div class="product-card">
+
+                <img src="imagenes/victoria.jpg" alt="DTC">
+
+                <div class="product-info">
+                    <h4>Cervezas de lata</h4>
+                    <p>Consulta disponibilidad.</p>
+                    <strong>$25 MXN</strong>
+
+                    <a href="https://wa.me/525540246668"
+                       target="_blank"
+                       rel="noopener"
+                       class="buy-btn">
+                        Consultar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CAGUAMAS -->
+        <div class="col-6 col-md-4 col-lg-3 product-item">
+            <div class="product-card">
+
+                <img src="imagenes/victoria.jpg" alt="DTC">
+                <div class="product-info">
+                    <h4>Caguamas</h4>
+                    <p>Consulta disponibilidad.</p>
+                    <strong>$40 - $45 MXN</strong>
+
+                    <a href="https://wa.me/525540246668"
+                       target="_blank"
+                       rel="noopener"
+                       class="buy-btn">
+                        Consultar
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- BANNER -->
+<section class="promo-banner">
+    <div class="container">
+
+        <h2>¡TODO LO QUE BUSCAS ESTÁ EN DTC!</h2>
+
+        <p>Calidad, sabor y atención para nuestros clientes.</p>
+
+        <a href="#contacto">CONTÁCTANOS</a>
+
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="container py-5">
+
+    <div class="section-heading">
+        <div>
+            <span>CONOCE DTC</span>
+            <h2>Nuestra galería</h2>
+        </div>
+    </div>
+
+    <div class="row g-3">
+
+        <div class="col-6 col-md-3">
+            <img class="gallery-img"
+                 src="imagenes/victoria.jpg"
+                 alt="Michelada">
+        </div>
+
+        <div class="col-6 col-md-3">
+            <img class="gallery-img"
+                 src="imagenes/victoria.jpg"
+                 alt="Azulito">
+        </div>
+
+        <div class="col-6 col-md-3">
+            <img class="gallery-img"
+                 src="imagenes/victoria.jpg"
+                 alt="Cerveza">
+        </div>
+
+        <div class="col-6 col-md-3">
+            <img class="gallery-img"
+                 src="imagenes/victoria.jpg"
+                 alt="Caguama">
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact-section">
+
+    <div class="container text-center">
+
+        <h2>¿NECESITAS AYUDA?</h2>
+
+        <p>Estamos para atenderte.</p>
+
+        <a href="https://wa.me/525540246668"
+           target="_blank"
+           rel="noopener"
+           class="contact-btn">
+            WHATSAPP
+        </a>
+
+        <a href="mailto:depositotadeochicuasen@hotmail.com"
+           class="contact-btn email-btn">
+            ENVIAR CORREO
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="dtc-footer">
+
+    <div class="container">
+
+        <div class="row g-4 text-center text-md-start">
+
+            <!-- INFORMACION -->
+            <div class="col-md-4">
+
+                <h3>DEPÓSITO TADEO CHICUASEN</h3>
+
+                <p>El sabor que nos distingue.</p>
+
+                <p>Gracias por tu preferencia.</p>
+
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="col-md-4">
+
+                <h4>SÍGUENOS</h4>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noopener">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.tiktok.com/"
+                       target="_blank"
+                       rel="noopener">
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- UBICACION -->
+            <div class="col-md-4">
+
+                <h4>VISÍTANOS</h4>
+
+                <p>📍 Depósito Tadeo Chicuasen</p>
+
+                <a class="location-btn"
+                href="https://www.google.com/maps/place/Benito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver./@19.5287521,-96.67192,352a,75y,160.51h,73.71t/data=!3m7!1e1!3m5!1sVtowUK3gONfypeWLxpbeMQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D16.290777045728802%26panoid%3DVtowUK3gONfypeWLxpbeMQ%26yaw%3D160.50967595253056!7i16384!8i8192!4m15!1m8!3m7!1s0x85db4bf0844619c5:0xf145390465d7f2df!2sBenito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver.!3b1!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl!3m5!1s0x85db4bf0844619c5:0xf145390465d7f2df!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer">
+                VER UBICACIÓN EN MAPS
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 DTC. Todos los derechos reservados.</p>
+
+            <p>Depósito Tadeo Chicuasen</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/525540246668"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contactar por WhatsApp">
+
+    WhatsApp
+
+</a>
+
+<!-- BUSCADOR -->
+<script>
+
+    const buscador = document.getElementById('buscador');
+
+    buscador.addEventListener('input', function () {
+
+        const texto = this.value.toLowerCase();
+
+        document.querySelectorAll('.product-item').forEach(producto => {
+
+            producto.style.display =
+                producto.innerText.toLowerCase().includes(texto)
+                ? ''
+                : 'none';
+
+        });
+
+    });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+ 
