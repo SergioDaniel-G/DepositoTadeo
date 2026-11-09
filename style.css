@@ -522,11 +522,25 @@ body {
     color: white;
 }
 
+/* FOTOGRAFÍAS DEL NEGOCIO */
+.foto-negocio {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #f3e9dc;
+    box-shadow: 0 4px 12px rgba(74, 46, 27, 0.12);
+}
+
 /* RESPONSIVE MÓVILES */
 @media(max-width: 768px) {
     .search-box {
         width: 100%;
         order: 3;
+    }
+
+    .foto-negocio {
+        height: 250px;
     }
 
     .hero {
