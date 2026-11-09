@@ -76,10 +76,18 @@
                 <span>DTC</span>
             </a>
 
-            <form class="search-box" action="#" onsubmit="return false;">
-                <input type="search" id="buscador" placeholder="¿Qué se te antoja hoy?" aria-label="Buscar productos">
-                <button type="submit" aria-label="Buscar">🔍</button>
-            </form>
+            <form class="search-box" id="formBuscador" role="search">
+    <input
+        type="search"
+        id="buscador"
+        placeholder="¿Qué se te antoja hoy?"
+        aria-label="Buscar productos"
+        autocomplete="off"
+    >
+    <button type="submit" aria-label="Buscar">
+        🔍
+    </button>
+</form>
 
             <div class="d-flex align-items-center gap-2">
                 <a href="tel:525540246668" class="header-phone-btn" title="Llamar directo">
@@ -141,7 +149,7 @@
         <div class="col product-item">
             <div class="product-card">
                 <div class="product-img-wrapper">
-                    <img src="imagenes/caguamas.jpg" alt="Caguamas de diferentes marcas disponibles en Depósito Tadeo Chicuasen" loading="lazy">
+                    <img src="imagenes/caguamas.webp" alt="Caguamas de diferentes marcas disponibles en Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h4>Caguamas</h4>
@@ -156,7 +164,7 @@
         <div class="col product-item">
             <div class="product-card">
                 <div class="product-img-wrapper">
-                    <img src="imagenes/azulitos.jpeg" alt="Azulitos disponibles en Depósito Tadeo Chicuasen" loading="lazy">
+                    <img src="imagenes/azulitos.webp" alt="Azulitos disponibles en Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h4>Azulitos</h4>
@@ -171,12 +179,12 @@
         <div class="col product-item">
             <div class="product-card">
                 <div class="product-img-wrapper">
-                    <img src="imagenes/latas.jpg" alt="Cerillitos preparados en Depósito Tadeo Chicuasen" loading="lazy">
+                    <img src="imagenes/latas.webp" alt="Cerillitos preparados en Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h4>Cerillitos</h4>
                     <p>La clásica y refrescante bebida preparada con un toque único.</p>
-                    <strong>$70 MXN</strong>
+                    <strong>$45-50 MXN</strong>
                     <a href="https://wa.me/525540246668?text=Hola,%20quiero%20pedir%20un%20cerillito" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
                 </div>
             </div>
@@ -186,7 +194,7 @@
         <div class="col product-item">
             <div class="product-card">
                 <div class="product-img-wrapper">
-                    <img src="imagenes/latas.jpg" alt="Cervezas de lata de diferentes marcas" loading="lazy">
+                    <img src="imagenes/latas.webp" alt="Cervezas de lata de diferentes marcas" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h4>Cervezas en lata</h4>
@@ -201,7 +209,7 @@
         <div class="col product-item">
             <div class="product-card">
                 <div class="product-img-wrapper">
-                    <img src="imagenes/micheladas.jpg" alt="Micheladas preparadas de Depósito Tadeo Chicuasen" loading="lazy">
+                    <img src="imagenes/micheladas.webp" alt="Micheladas preparadas de Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
                 <div class="product-info">
                     <h4>Micheladas</h4>
@@ -270,19 +278,19 @@
 
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
         <div class="col">
-            <img class="gallery-img shadow-sm" src="imagenes/caguamas.jpg" alt="Caguamas frías" loading="lazy">
+            <img class="gallery-img shadow-sm" src="imagenes/caguamas.webp" alt="Caguamas frías" loading="lazy">
         </div>
         <div class="col">
-            <img class="gallery-img shadow-sm" src="imagenes/azulitos.jpeg" alt="Azulito preparado" loading="lazy">
+            <img class="gallery-img shadow-sm" src="imagenes/azulitos.webp" alt="Azulito preparado" loading="lazy">
         </div>
         <div class="col">
-            <img class="gallery-img shadow-sm" src="imagenes/latas.jpg" alt="Cerillito preparado" loading="lazy">
+            <img class="gallery-img shadow-sm" src="imagenes/latas.webp" alt="Cerillito preparado" loading="lazy">
         </div>
         <div class="col">
-            <img class="gallery-img shadow-sm" src="imagenes/latas.jpg" alt="Cervezas frías" loading="lazy">
+            <img class="gallery-img shadow-sm" src="imagenes/latas.webp" alt="Cervezas frías" loading="lazy">
         </div>
         <div class="col">
-            <img class="gallery-img shadow-sm" src="imagenes/micheladas.jpg" alt="Michelada preparada" loading="lazy">
+            <img class="gallery-img shadow-sm" src="imagenes/micheladas.webp" alt="Michelada preparada" loading="lazy">
         </div>
     </div>
 </section>
@@ -334,7 +342,8 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-secondary">
-                                ¡por el momento! No contamos con hielo y complementos ideales para que tus bebidas y cervezas se mantengan frías durante toda tu reunión.
+                               Por el momento no contamos con hielo ni complementos adicionales. 
+¡Pregúntanos por WhatsApp sobre los productos disponibles!
                             </div>
                         </div>
                     </div>
@@ -440,13 +449,60 @@
 
 <!-- SCRIPT BUSCADOR -->
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+
     const buscador = document.getElementById('buscador');
-    buscador.addEventListener('input', function () {
-        const texto = this.value.toLowerCase();
-        document.querySelectorAll('.product-item').forEach(producto => {
-            producto.style.display = producto.innerText.toLowerCase().includes(texto) ? '' : 'none';
+    const formulario = document.getElementById('formBuscador');
+    const productos = document.querySelectorAll('.product-item');
+
+    function buscarProductos() {
+
+        const texto = buscador.value
+            .trim()
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+
+        let encontrados = 0;
+
+        productos.forEach(producto => {
+
+            const contenido = producto.textContent
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
+
+            const coincide = contenido.includes(texto);
+
+            producto.style.display = coincide ? "" : "none";
+
+            if (coincide) {
+                encontrados++;
+            }
         });
+
+        return encontrados;
+    }
+
+    // Buscar mientras escribe
+    buscador.addEventListener('input', buscarProductos);
+
+    // Buscar al pulsar la lupa o Enter
+    formulario.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+
+        const encontrados = buscarProductos();
+
+        if (encontrados > 0) {
+            document.getElementById('productos').scrollIntoView({
+                behavior: 'smooth'
+            });
+        } else {
+            alert('No encontramos productos con ese nombre. Intenta otra búsqueda.');
+        }
     });
+
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
