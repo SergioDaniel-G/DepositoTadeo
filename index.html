@@ -1,318 +1,425 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DTC | Depósito Tadeo Chicuasen</title>
+    <!-- SEO PRINCIPAL -->
+    <title>Depósito Tadeo Chicuasen | Cervezas, Micheladas y Cerillitos en Actopan, Ver.</title>
+    <meta name="description" content="Visita Depósito Tadeo Chicuasen en Actopan, Veracruz. Caguamas frías, micheladas, cerillitos y azulitos. ¡Llámanos o escríbenos por WhatsApp!">
+    <meta name="keywords" content="Depósito Tadeo Chicuasen, cerillitos en Chicuasen, bebidas en Chicuasen, cervezas en Actopan Veracruz, micheladas, azulitos, caguamas">
+    <meta name="author" content="Depósito Tadeo Chicuasen">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="Spanish">
+    <meta name="theme-color" content="#4a2e1b">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+    <!-- URL CANÓNICA -->
+    <link rel="canonical" href="https://TU-DOMINIO.com/">
 
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Depósito Tadeo Chicuasen">
+    <meta property="og:title" content="Depósito Tadeo Chicuasen | Bebidas y Cerillitos">
+    <meta property="og:description" content="Encuentra tus bebidas favoritas, micheladas y cerillitos en Depósito Tadeo Chicuasen.">
+    <meta property="og:image" content="https://TU-DOMINIO.com/imagenes/deposito.jpeg">
+    <meta property="og:url" content="https://TU-DOMINIO.com/">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Depósito Tadeo Chicuasen">
+    <meta name="twitter:description" content="Caguamas, cervezas, cerillitos y micheladas en Chicuasen, Veracruz.">
+    <meta name="twitter:image" content="https://TU-DOMINIO.com/imagenes/deposito.jpeg">
+
+    <!-- ICONO -->
+    <link rel="icon" href="imagenes/deposito.jpeg">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS PERSONALIZADO -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- DATOS ESTRUCTURADOS (SCHEMA.ORG) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Depósito Tadeo Chicuasen",
+      "description": "Depósito de bebidas, cervezas, cerillitos y micheladas en Chicuasen, Actopan, Veracruz.",
+      "image": "https://TU-DOMINIO.com/imagenes/deposito.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Benito Juarez S/N",
+        "addressLocality": "Chicuasen",
+        "addressRegion": "Veracruz",
+        "postalCode": "91488",
+        "addressCountry": "MX"
+      },
+      "telephone": "+525540246668",
+      "email": "depositotadeochicuasen@hotmail.com",
+      "url": "https://TU-DOMINIO.com/"
+    }
+    </script>
 </head>
 
 <body>
 
 <!-- ENCABEZADO -->
-<header class="dtc-header">
+<header class="dtc-header shadow-sm sticky-top">
     <div class="container-fluid px-4">
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
 
             <a href="#inicio" class="brand">
-                <img src="imagenes/deposito.jpeg" alt="DTC">
-                <span>DEPOSITO TADEO CHICUASEN</span>
+                <img src="imagenes/deposito.jpeg" alt="Logotipo de Depósito Tadeo Chicuasen">
+                <span>DTC</span>
             </a>
 
             <form class="search-box" action="#" onsubmit="return false;">
-                <input type="search" id="buscador"
-                       placeholder="¿Qué estás buscando?"
-                       aria-label="Buscar productos">
-                <button type="submit">🔍</button>
+                <input type="search" id="buscador" placeholder="¿Qué se te antoja hoy?" aria-label="Buscar productos">
+                <button type="submit" aria-label="Buscar">🔍</button>
             </form>
 
-            <a href="#contacto" class="header-contact">
-                Contactar
-            </a>
+            <div class="d-flex align-items-center gap-2">
+                <a href="tel:525540246668" class="header-phone-btn" title="Llamar directo">
+                    llamar 
+                </a>
+                <a href="#contacto" class="header-contact">
+                    Contactar
+                </a>
+            </div>
 
         </div>
     </div>
 </header>
 
-<!-- MENU -->
-<nav class="dtc-menu">
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav class="dtc-menu" aria-label="Menú principal">
     <div class="container-fluid px-4">
-        <div class="d-flex flex-wrap gap-4">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
             <a href="#inicio">Inicio</a>
             <a href="#productos">Bebidas</a>
+            <a href="#horarios">Horarios</a>
             <a href="#galeria">Galería</a>
+            <a href="#faq">Dudas</a>
             <a href="#contacto">Contacto</a>
         </div>
     </div>
 </nav>
 
-<!-- PORTADA -->
+<main>
+
+<!-- PORTADA / HERO -->
 <section id="inicio" class="hero">
     <div class="container">
         <div class="hero-content">
-
-            <span class="hero-label">BIENVENIDO A Deposito Tadeo Chicuasen</span>
-
-            <h1>DEPÓSITO TADEO CHICUASEN</h1>
-
-            <h2>El sabor que nos distingue.</h2>
-
-            <p>Encuentra tus bebidas favoritas en un solo lugar.</p>
-
-            <a href="#productos" class="btn-shop">
-                VER PRODUCTOS
-            </a>
-
+            <span class="hero-label">DEPOSITO TADEO CHICUASEN</span>
+            <h1>CHICUASEN, ACTOPAN, VERACRUZ</h1>
+            <h2>Cervezas bien frías, micheladas, cerillitos y azulitos.</h2>
+            <p>Todo lo que necesitas para tu reunión, fin de semana o antojo, siempre fresco y al mejor precio de la zona. ¡Llámanos o escríbenos directamente!</p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="#productos" class="btn-shop">VER PRODUCTOS</a>
+                <a href="https://wa.me/525540246668?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="btn-shop-whatsapp">PEDIR POR WHATSAPP</a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- PRODUCTOS -->
+<!-- SECCIÓN DE PRODUCTOS (LOS 5 EN UNA SOLA FILA) -->
 <section id="productos" class="container-fluid px-4 py-5">
-
     <div class="section-heading">
         <div>
-            <span>CATÁLOGO DTC</span>
+            <span class="badge-subtitle">NUESTRO CATÁLOGO</span>
             <h2>Compra tus favoritos</h2>
         </div>
     </div>
 
-    <div class="row g-4" id="productList">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4" id="productList">
 
-        <!-- MICHELADAS -->
-        <div class="col-6 col-md-4 col-lg-3 product-item">
+        <!-- CAGUAMAS -->
+        <div class="col product-item">
             <div class="product-card">
-
-                <img src="imagenes/victoria.jpg" alt="DTC">
-
-                <div class="product-info">
-                    <h4>Micheladas</h4>
-                    <p>Elige tu favorita.</p>
-                    <strong>$65 - $70 MXN</strong>
-
-                    <a href="https://wa.me/525540246668"
-                       target="_blank"
-                       rel="noopener"
-                       class="buy-btn">
-                        Consultar
-                    </a>
+                <div class="product-img-wrapper">
+                    <img src="imagenes/caguamas.jpg" alt="Caguamas de diferentes marcas disponibles en Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
-
+                <div class="product-info">
+                    <h4>Caguamas</h4>
+                    <p>Elige tu marca favorita bien fría y lista para compartir.</p>
+                    <strong>Varias marcas</strong>
+                    <a href="https://wa.me/525540246668?text=Hola,%20me%20interesan%20las%20caguamas" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
+                </div>
             </div>
         </div>
 
         <!-- AZULITOS -->
-        <div class="col-6 col-md-4 col-lg-3 product-item">
+        <div class="col product-item">
             <div class="product-card">
-
-                <img src="imagenes/victoria.jpg" alt="DTC">
-
+                <div class="product-img-wrapper">
+                    <img src="imagenes/azulitos.jpeg" alt="Azulitos disponibles en Depósito Tadeo Chicuasen" loading="lazy">
+                </div>
                 <div class="product-info">
                     <h4>Azulitos</h4>
-                    <p>Una bebida llena de color.</p>
+                    <p>Una bebida llena de color, dulce y refrescante estilo licuachela.</p>
                     <strong>$70 MXN</strong>
-
-                    <a href="https://wa.me/525540246668"
-                       target="_blank"
-                       rel="noopener"
-                       class="buy-btn">
-                        Consultar
-                    </a>
+                    <a href="https://wa.me/525540246668?text=Hola,%20quiero%20pedir%20un%20azulito" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
                 </div>
+            </div>
+        </div>
 
+        <!-- CERILLITOS -->
+        <div class="col product-item">
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="imagenes/latas.jpg" alt="Cerillitos preparados en Depósito Tadeo Chicuasen" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <h4>Cerillitos</h4>
+                    <p>La clásica y refrescante bebida preparada con un toque único.</p>
+                    <strong>$70 MXN</strong>
+                    <a href="https://wa.me/525540246668?text=Hola,%20quiero%20pedir%20un%20cerillito" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
+                </div>
             </div>
         </div>
 
         <!-- CERVEZAS -->
-        <div class="col-6 col-md-4 col-lg-3 product-item">
+        <div class="col product-item">
             <div class="product-card">
-
-                <img src="imagenes/victoria.jpg" alt="DTC">
-
-                <div class="product-info">
-                    <h4>Cervezas de lata</h4>
-                    <p>Consulta disponibilidad.</p>
-                    <strong>$25 MXN</strong>
-
-                    <a href="https://wa.me/525540246668"
-                       target="_blank"
-                       rel="noopener"
-                       class="buy-btn">
-                        Consultar
-                    </a>
+                <div class="product-img-wrapper">
+                    <img src="imagenes/latas.jpg" alt="Cervezas de lata de diferentes marcas" loading="lazy">
                 </div>
-
+                <div class="product-info">
+                    <h4>Cervezas en lata</h4>
+                    <p>Presentaciones individuales, six-packs o bultos completos.</p>
+                    <strong>Varias marcas</strong>
+                    <a href="https://wa.me/525540246668?text=Hola,%20quisiera%20saber%20qué%20cervezas%20en%20lata%20tienen" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
+                </div>
             </div>
         </div>
 
-        <!-- CAGUAMAS -->
-        <div class="col-6 col-md-4 col-lg-3 product-item">
+        <!-- MICHELADAS -->
+        <div class="col product-item">
             <div class="product-card">
-
-                <img src="imagenes/victoria.jpg" alt="DTC">
-                <div class="product-info">
-                    <h4>Caguamas</h4>
-                    <p>Consulta disponibilidad.</p>
-                    <strong>$40 - $45 MXN</strong>
-
-                    <a href="https://wa.me/525540246668"
-                       target="_blank"
-                       rel="noopener"
-                       class="buy-btn">
-                        Consultar
-                    </a>
+                <div class="product-img-wrapper">
+                    <img src="imagenes/micheladas.jpg" alt="Micheladas preparadas de Depósito Tadeo Chicuasen" loading="lazy">
                 </div>
-
+                <div class="product-info">
+                    <h4>Micheladas</h4>
+                    <p>Escarchadas con suadero, salsas negras, limón y el toque de la casa.</p>
+                    <strong>$65 - $75 MXN</strong>
+                    <a href="https://wa.me/525540246668?text=Hola,%20quiero%20pedir%20micheladas" target="_blank" rel="noopener" class="buy-btn">Consultar</a>
+                </div>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- BANNER -->
+<!-- SECCIÓN DE HORARIOS -->
+<section id="horarios" class="hours-section py-5 bg-light border-top border-bottom">
+    <div class="container">
+        <div class="section-heading text-center mb-4">
+            <div>
+                <span class="badge-subtitle">¿CUÁNDO ABRIMOS?</span>
+                <h2>Nuestros Horarios de Atención</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm border-0 p-4 rounded-4">
+                    <ul class="list-unstyled mb-0 schedule-list">
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span><strong>Lunes a Jueves:</strong></span>
+                            <span class="text-muted">10:00 AM – 9:00 PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span><strong>Viernes y Sábados:</strong></span>
+                            <span class="text-muted">10:00 AM – 11:00 PM</span>
+                        </li>
+                        <li class="d-flex justify-content-between py-2">
+                            <span><strong>Domingos:</strong></span>
+                            <span class="text-muted">10:00 AM – 8:00 PM</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mt-4">
+                        <p class="mb-0 text-success fw-bold">¡Abierto hoy! Ven por tu bebida bien fría.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BANNER PROMOCIONAL -->
 <section class="promo-banner">
     <div class="container">
-
         <h2>¡TODO LO QUE BUSCAS ESTÁ EN DTC!</h2>
-
-        <p>Calidad, sabor y atención para nuestros clientes.</p>
-
-        <a href="#contacto">CONTÁCTANOS</a>
-
+        <p>Calidad, buen ambiente y la mejor atención para nuestros clientes en Chicuasen.</p>
+        <a href="#contacto">CONTÁCTANOS AHORA</a>
     </div>
 </section>
 
-<!-- GALERIA -->
-<section id="galeria" class="container py-5">
-
-    <div class="section-heading">
+<!-- GALERÍA (LAS 5 FOTOS EN UNA SOLA FILA) -->
+<section id="galeria" class="container-fluid px-4 py-5">
+    <div class="section-heading text-center mb-4">
         <div>
-            <span>CONOCE DTC</span>
+            <span class="badge-subtitle">CONOCE DTC</span>
             <h2>Nuestra galería</h2>
         </div>
     </div>
 
-    <div class="row g-3">
-
-        <div class="col-6 col-md-3">
-            <img class="gallery-img"
-                 src="imagenes/victoria.jpg"
-                 alt="Michelada">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+        <div class="col">
+            <img class="gallery-img shadow-sm" src="imagenes/caguamas.jpg" alt="Caguamas frías" loading="lazy">
         </div>
-
-        <div class="col-6 col-md-3">
-            <img class="gallery-img"
-                 src="imagenes/victoria.jpg"
-                 alt="Azulito">
+        <div class="col">
+            <img class="gallery-img shadow-sm" src="imagenes/azulitos.jpeg" alt="Azulito preparado" loading="lazy">
         </div>
-
-        <div class="col-6 col-md-3">
-            <img class="gallery-img"
-                 src="imagenes/victoria.jpg"
-                 alt="Cerveza">
+        <div class="col">
+            <img class="gallery-img shadow-sm" src="imagenes/latas.jpg" alt="Cerillito preparado" loading="lazy">
         </div>
-
-        <div class="col-6 col-md-3">
-            <img class="gallery-img"
-                 src="imagenes/victoria.jpg"
-                 alt="Caguama">
+        <div class="col">
+            <img class="gallery-img shadow-sm" src="imagenes/latas.jpg" alt="Cervezas frías" loading="lazy">
         </div>
-
+        <div class="col">
+            <img class="gallery-img shadow-sm" src="imagenes/micheladas.jpg" alt="Michelada preparada" loading="lazy">
+        </div>
     </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="contact-section">
-
-    <div class="container text-center">
-
-        <h2>¿NECESITAS AYUDA?</h2>
-
-        <p>Estamos para atenderte.</p>
-
-        <a href="https://wa.me/525540246668"
-           target="_blank"
-           rel="noopener"
-           class="contact-btn">
-            WHATSAPP
-        </a>
-
-        <a href="mailto:depositotadeochicuasen@hotmail.com"
-           class="contact-btn email-btn">
-            ENVIAR CORREO
-        </a>
-
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="dtc-footer">
-
+<!-- PREGUNTAS FRECUENTES -->
+<section id="faq" class="faq-section py-5 bg-white border-top">
     <div class="container">
+        <div class="section-heading text-center mb-4">
+            <div>
+                <span class="badge-subtitle">RESOLVEMOS TUS DUDAS</span>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="accordion" id="faqAccordion">
+                    
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Tienen servicio a domicilio o para llevar?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary">
+                                Principalmente contamos con servicio en mostrador directamente en el depósito y pedidos rápidos para recoger comunicándote por WhatsApp o llamada directa. ¡Escríbenos o llámanos!
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Qué formas de pago aceptan en el depósito?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary">
+                                Aceptamos pago en efectivo y transferencias bancarias directas. ¡Pregúntanos en mostrador!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Venden hielo o botanas para acompañar?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-secondary">
+                                ¡por el momento! No contamos con hielo y complementos ideales para que tus bebidas y cervezas se mantengan frías durante toda tu reunión.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO -->
+<section id="contacto" class="contact-section">
+    <div class="container text-center">
+        <h2>¿NECESITAS ATENCIÓN RÁPIDA?</h2>
+        <p class="mb-4">Haz tu pedido o llama directo al teléfono <strong>55 4024 6668</strong>.</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="tel:525540246668" class="contact-btn phone-direct-btn">
+                LLAMAR
+            </a>
+            <a href="https://wa.me/525540246668?text=Hola,%20vengo%20de%20su%20sitio%20web" target="_blank" rel="noopener" class="contact-btn whatsapp-btn">
+                WHATSAPP DIRECTO
+            </a>
+            <a href="mailto:depositotadeochicuasen@hotmail.com" class="contact-btn email-btn">
+                ENVIAR CORREO
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- PIE DE PÁGINA (FOOTER) -->
+<footer class="dtc-footer">
+    <div class="container">
         <div class="row g-4 text-center text-md-start">
 
-            <!-- INFORMACION -->
+            <!-- UBICACIÓN Y TELÉFONO -->
             <div class="col-md-4">
-
-                <h3>DEPÓSITO TADEO CHICUASEN</h3>
-
-                <p>El sabor que nos distingue.</p>
-
-                <p>Gracias por tu preferencia.</p>
-
+                <h3>UBICACIÓN Y CONTACTO</h3>
+                <p>Calle Benito Juárez S/N</p>
+                <p>Chicuasen, Actopan, Veracruz</p>
+                <p>C.P. 91488</p>
+                <p class="mt-3"><strong>Teléfono:</strong> <a href="tel:525540246668" class="text-white text-decoration-underline">55 4024 6668</a></p>
             </div>
 
             <!-- REDES SOCIALES -->
             <div class="col-md-4">
+    <h4>SÍGUENOS</h4>
 
-                <h4>SÍGUENOS</h4>
+    <div class="social-links">
 
-                <div class="social-links">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61595451663263"
+           target="_blank" rel="noopener noreferrer">
+            <img src="imagenes/facebook.png"
+                 alt="Facebook" width="24" height="24">
+            Facebook
+        </a>
 
-                    <a href="https://www.facebook.com/"
-                       target="_blank"
-                       rel="noopener">
-                        Facebook
-                    </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/deposito_tadeo_chicuasen/"
+           target="_blank" rel="noopener noreferrer">
+            <img src="imagenes/instagram.png"
+                 alt="Instagram" width="24" height="24">
+            Instagram
+        </a>
 
-                    <a href="https://www.instagram.com/"
-                       target="_blank"
-                       rel="noopener">
-                        Instagram
-                    </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@depositotadeochicuasen"
+           target="_blank" rel="noopener noreferrer">
+            <img src="imagenes/tiktok.png"
+                 alt="TikTok" width="24" height="24">
+            TikTok
+        </a>
 
-                    <a href="https://www.tiktok.com/"
-                       target="_blank"
-                       rel="noopener">
-                        TikTok
-                    </a>
+    </div>
+</div>
 
-                </div>
-
-            </div>
-
-            <!-- UBICACION -->
+            <!-- MAPA -->
             <div class="col-md-4">
-
                 <h4>VISÍTANOS</h4>
-
-                <p>📍 Depósito Tadeo Chicuasen</p>
-
-                <a class="location-btn"
-                href="https://www.google.com/maps/place/Benito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver./@19.5287521,-96.67192,352a,75y,160.51h,73.71t/data=!3m7!1e1!3m5!1sVtowUK3gONfypeWLxpbeMQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D16.290777045728802%26panoid%3DVtowUK3gONfypeWLxpbeMQ%26yaw%3D160.50967595253056!7i16384!8i8192!4m15!1m8!3m7!1s0x85db4bf0844619c5:0xf145390465d7f2df!2sBenito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver.!3b1!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl!3m5!1s0x85db4bf0844619c5:0xf145390465d7f2df!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl?entry=ttu"
-                target="_blank"
-                rel="noopener noreferrer">
-                VER UBICACIÓN EN MAPS
+                <p> Depósito Tadeo Chicuasen</p>
+                <a class="location-btn" href="https://www.google.com/maps/place/Benito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver./@19.5287521,-96.67192,352a,75y,160.51h,73.71t/data=!3m7!1e1!3m5!1sVtowUK3gONfypeWLxpbeMQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D16.290777045728802%26panoid%3DVtowUK3gONfypeWLxpbeMQ%26yaw%3D160.50967595253056!7i16384!8i8192!4m15!1m8!3m7!1s0x85db4bf0844619c5:0xf145390465d7f2df!2sBenito+Ju%C3%A1rez,+91488+Chicuas%C3%A9n,+Ver.!3b1!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl!3m5!1s0x85db4bf0844619c5:0xf145390465d7f2df!8m2!3d19.528691!4d-96.6713338!16s%2Fg%2F11b62s79sl?entry=ttu" target="_blank" rel="noopener noreferrer">
+                    VER UBICACIÓN EN MAPS
                 </a>
-
             </div>
 
         </div>
@@ -320,52 +427,28 @@
         <hr>
 
         <div class="footer-bottom">
-
-            <p>© 2026 DTC. Todos los derechos reservados.</p>
-
-            <p>Depósito Tadeo Chicuasen</p>
-
+            <p>© 2026 Depósito Tadeo Chicuasen. Todos los derechos reservados.</p>
         </div>
-
     </div>
-
 </footer>
 
 <!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/525540246668"
-   class="whatsapp-float"
-   target="_blank"
-   rel="noopener"
-   aria-label="Contactar por WhatsApp">
-
-    WhatsApp
-
+<a href="https://wa.me/525540246668?text=Hola,%20vengo%20de%20su%20sitio%20web%20y%20quiero%20hacer%20un%20pedido" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span>WhatsApp</span>
+    <img src="imagenes/whatsapp.png" alt="WhatsApp" width="28" height="28">
 </a>
 
-<!-- BUSCADOR -->
+<!-- SCRIPT BUSCADOR -->
 <script>
-
     const buscador = document.getElementById('buscador');
-
     buscador.addEventListener('input', function () {
-
         const texto = this.value.toLowerCase();
-
         document.querySelectorAll('.product-item').forEach(producto => {
-
-            producto.style.display =
-                producto.innerText.toLowerCase().includes(texto)
-                ? ''
-                : 'none';
-
+            producto.style.display = producto.innerText.toLowerCase().includes(texto) ? '' : 'none';
         });
-
     });
-
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
- 
