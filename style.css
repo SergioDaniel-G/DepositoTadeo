@@ -277,8 +277,9 @@ body {
 .product-info h4 {
     font-size: 15px;
     font-weight: 700;
-    color: #4a2e1b;
+    color: #f9f8f7;
     margin-bottom: 5px;
+    background-color: #432508;
 }
 
 .product-info p {
