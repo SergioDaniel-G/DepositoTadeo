@@ -130,7 +130,7 @@ body {
     min-height: 400px;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(243, 204, 147, 0.93), rgba(30, 18, 10, 0.90)), url('imagenes/espuma.jpg') center/cover;
+    background: linear-gradient(135deg, rgba(243, 204, 147, 0.93), rgba(30, 18, 10, 0.90)), url('imagenes/espuma.webp') center/cover;
     color: rgb(255, 255, 255);
     padding: 60px 0;
 }
